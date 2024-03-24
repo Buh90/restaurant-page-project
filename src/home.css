@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+h1 {
+  font-family: "Italianno", "Poppins", sans-serif;
+  font-weight: 100;
+  color: gold;
+  font-size: min(20vw, 12rem);
+  margin-top: min(-5vw, 1rem);
+}
+
+p {
+  margin-top: 10rem;
+  font-size: min(5vw, 1rem);
+}
+
+svg {
+  width: min(8rem, 40vw);
+}
