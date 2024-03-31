@@ -10,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
+  user-select: none;
 }
 
 header {
@@ -85,13 +86,13 @@ svg {
 }
 
 .container {
-  margin: 5rem auto 5rem;
+  margin: 1rem auto 5rem;
 }
 
 .menu-container {
   width: min(80%, 100rem);
   display: grid;
-  grid-template-columns: repeat(auto-fit, 12rem);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   justify-content: center;
 }
@@ -99,45 +100,52 @@ svg {
 .card {
   border: gold solid 3px;
   border-radius: 0.8rem;
-  padding: 0.4rem;
+  /* padding: 0.4rem; */
   position: relative;
+  overflow: hidden;
 }
 
 .dish-img {
   width: 100%;
   height: 7rem;
   object-fit: cover;
-  border-radius: 0.6rem;
 }
 
 .dish-name {
   margin-top: 0.2rem;
   text-transform: uppercase;
   font-weight: 600;
+  padding: 0 1rem;
 }
 
 .dish-description {
   font-size: 0.8rem;
-  margin: 0.5rem;
+  margin: 0.5rem 1rem;
   padding: 0.3rem 0;
   font-style: italic;
   border-top: 1px solid gold;
-
   margin-bottom: 3rem;
 }
 
 .price {
-  width: 88%;
   padding-top: 0.3rem;
   position: absolute;
-  margin: 0 auto;
+  margin: 0 1rem;
   bottom: 0.5rem;
   left: 0;
   right: 0;
   border-top: 1px solid gold;
 }
 
+.about {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  padding: 0 2rem;
+}
+
 footer {
+  font-size: 0.8rem;
+  font-weight: 300;
   position: fixed;
   width: 100%;
   bottom: 0;
